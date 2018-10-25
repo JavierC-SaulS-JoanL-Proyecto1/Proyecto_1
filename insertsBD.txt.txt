@@ -55,17 +55,17 @@ VALUES	('18','salon de actos','1',true);
 INSERT INTO recursos(id_recurso,recurso,tipo,disponible)
 VALUES	('19','sala de reuniones','1',true);
 
-INSERT INTO usuarios(usuario,nombre,apellido)
-VALUES	('ssole','saul','sole');
+INSERT INTO usuarios(usuario,nombre,apellido,password)
+VALUES	('ssole','saul','sole','123asd');
 
-INSERT INTO usuarios(usuario,nombre,apellido)
-VALUES	('ahitler','adolfo','hitler');
+INSERT INTO usuarios(usuario,nombre,apellido,password)
+VALUES	('ahitler','adolfo','hitler','siegheil');
 
-INSERT INTO usuarios(usuario,nombre,apellido)
-VALUES	('ppero','pedro','pero');
-
-INSERT INTO tipos(id_tipo, tipo)
-VALUES ('1','recursos_inmuebles')
+INSERT INTO usuarios(usuario,nombre,apellido,password)
+VALUES	('ppero','pedro','pero','123qwe');
 
 INSERT INTO tipos(id_tipo, tipo)
-VALUES ('2','recursos_electronicos')
+VALUES ('1','recursos_inmuebles');
+
+INSERT INTO tipos(id_tipo, tipo)
+VALUES ('2','recursos_electronicos');
