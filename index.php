@@ -10,9 +10,8 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-    	<h1>HOLA</h1>
         <?php
-        // put your code here
+            header('Location: login.php')
         ?>
     </body>
 </html>
