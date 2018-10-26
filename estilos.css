@@ -28,6 +28,7 @@
     margin-left: 25%;
     padding: 0% 5% 2% 5%;
     min-width: 400px;
+    margin-bottom: 5%;
 }
 
 .blq-cntr-titulo{
@@ -65,6 +66,15 @@
     float: right;
 }
 
+
 .tablaUsuario{
-    background-color: aquamarine;
+    border-style: solid;
+    border-color: aliceblue;
+    padding: 1%;
+}
+
+#tablaTable{
+    border-style: groove;
+    border-color: lightgoldenrodyellow;
+    
 }
