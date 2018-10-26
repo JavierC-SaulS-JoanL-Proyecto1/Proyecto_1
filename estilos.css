@@ -1,0 +1,70 @@
+
+.color_fondo{
+	background-color: lightblue;
+}
+
+.clase1{
+	color:red;
+}
+.login_centro{
+	padding-top: 60%; 
+}
+
+.cuadro_central{
+	height: 500px;
+	width: 100%;
+	background-color: black;
+}
+
+.titulo{
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+    
+.blq-cntr{
+    background-color: antiquewhite;
+    width: 50%;
+    margin-left: 25%;
+    padding: 0% 5% 2% 5%;
+    min-width: 400px;
+}
+
+.blq-cntr-titulo{
+    width: 100%;
+    height: 70px;
+    font-size: 18px;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.recursosElec{
+    float: right;
+}
+
+.cabecera{
+    height: 110px;
+    background-color: blueviolet;
+}
+
+.label-usuario{
+    width: 37%;
+    float: left;
+    min-width: 60px;
+    margin-top: 2%;
+}
+
+/* label al lado del label con el usuario */
+.label-usuario-1{
+    padding: 4%;
+    min-width: 100px;
+    float: left;
+}
+
+#btn-cerrarSesion{
+    float: right;
+}
+
+.tablaUsuario{
+    background-color: aquamarine;
+}

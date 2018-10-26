@@ -1,17 +1,9 @@
 <?php
  
 class queriesMysql{
-    // query de prueba. por si las cosas se tuercen
-    public function queryPrueba(&$link){
 
-        $queryPrueba = "SELECT * FROM usuarios";
-        $query = mysqli_query($link, $queryPrueba);
-        if ($query) {
-            return $query;
-        }
-    }
-    
     public function validateLoginUser(&$link, string $user, string $password){
+        //var_dump($user,$password);
         $queryValidateLogin = "
             SELECT
                 usuario,
@@ -19,14 +11,34 @@ class queriesMysql{
             FROM
                 usuarios
             WHERE
-                usuario LIKE $user && password LIKE $password";
+                usuario LIKE '$user' AND password LIKE '$password'";
         /* @var $validateLogin type */
         $validateLogin = mysqli_query($link, $queryValidateLogin);
-        var_dump($validateLogin);
+        
         if(mysqli_num_rows($validateLogin) > 0){
             return $validateLogin;
         }else{
-            return $validateLogin;
+            return false;
         }
+    }
+    
+    public function getRecursosInm (&$link){
+        $recurso = [];
+        $queryGetRecurso="
+            SELECT
+                recurso
+            FROM
+                recursos
+            WHERE
+                tipo = 1 AND disponible = 1";
+        $getRecurso = mysqli_query($link, $queryGetRecurso);
+        
+        while ($row = mysqli_fetch_array($getRecurso)) {
+            array_push($recurso, $row);
+        }
+       
+       
+       return $recurso;
+        
     }
 }
