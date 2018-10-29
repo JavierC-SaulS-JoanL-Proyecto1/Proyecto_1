@@ -1,13 +1,13 @@
 
 .color_fondo{
-	background-color: lightyellow;
+	background-color: white;
 }
 
 .clase1{
 	color:red;
 }
 .login_centro{
-	padding-top: 60%; 
+	padding-top: 33%; 
 }
 
 .cuadro_central{
@@ -41,18 +41,37 @@
 .recursosElec{
     float: right;
 }
-
+/*Login Cabezera y Pie*/
 .cabecera{
-    height: 110px;
-    background-color: blueviolet;
+    height: 150px;
+    background-color: black;
+    padding-left: 0px;
+    color:white;
 }
 
+.imagen{
+    height: 150px;
+    padding-right: 70px;
+    padding-left: 0px;
+}
+
+.pie{
+    height:80px;
+    background-color: black;
+    color:white;
+}
+
+.espacio{
+    height:160px;
+}
+/*Login Cabezera y Pie*/
 .label-usuario{
     width: 37%;
     float: left;
     min-width: 60px;
     margin-top: 2%;
 }
+
 
 /* label al lado del label con el usuario */
 .label-usuario-1{

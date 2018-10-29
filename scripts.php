@@ -11,3 +11,5 @@
 <!-- CSS PERSONAL -->
 <link href="estilos.css" rel="stylesheet" type="text/css">
 <link href="miestilo.css" rel="stylesheet" type="text/css">
+<!--Validacion.js -->
+<script  src="validacion.js"></script>
