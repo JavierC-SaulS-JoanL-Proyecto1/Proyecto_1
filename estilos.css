@@ -1,6 +1,6 @@
 
 .color_fondo{
-	background-color: lightblue;
+	background-color: white;
 }
 
 .clase1{
@@ -76,5 +76,41 @@
 #tablaTable{
     border-style: groove;
     border-color: lightgoldenrodyellow;
-    
+}
+
+.cuerpoModal{
+    padding: 10px;
+    height: 55px;
+}
+
+#divBtnReservar{
+    padding: 0%;
+}
+
+#btnReservar{
+    float: right;
+}
+
+
+.cabecera{
+    height: 150px;
+    background-color: black;
+    padding-left: 0px;
+    color:white;
+}
+
+.imagen{
+    height: 150px;
+    padding-right: 70px;
+    padding-left: 0px;
+}
+
+.pie{
+    height:80px;
+    background-color: black;
+    color:white;
+}
+
+.espacio{
+    height:160px;
 }

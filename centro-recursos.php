@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Prueba</title>
+    <title>Central de Recursos</title>
     <?php include('scripts.php');
           include('modales.php')?>
 </head>
@@ -28,7 +28,7 @@
         </div>
         
         <div class="xs-col-12">
-            <?php include('tablaModal.php')?>
+            <?php include('tablaRecursos.php')?>
         </div>
     </div>
      <?php //echo $usuario.$password." <br>".$usuarioBD.$passwordBD; ?>
@@ -41,10 +41,5 @@
         window.location = 'login.php';
     });
     
-    //botones para reservar recurso
-    $( "#btn-recurso-inm" ).click(function() {
-       // alert('hola');
-        document.getElementById('resultadoContent').className='modalbox resize';
-        $('#resultadoContent').dialog();
-    });
+    
 </script>
