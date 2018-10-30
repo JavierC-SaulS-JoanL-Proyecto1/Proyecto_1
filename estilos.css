@@ -7,7 +7,7 @@
 	color:red;
 }
 .login_centro{
-	padding-top: 33%; 
+	padding-top: 60%; 
 }
 
 .cuadro_central{
@@ -28,6 +28,7 @@
     margin-left: 25%;
     padding: 0% 5% 2% 5%;
     min-width: 400px;
+    margin-bottom: 5%;
 }
 
 .blq-cntr-titulo{
@@ -41,7 +42,57 @@
 .recursosElec{
     float: right;
 }
-/*Login Cabezera y Pie*/
+
+.cabecera{
+    height: 110px;
+    background-color: blueviolet;
+}
+
+.label-usuario{
+    width: 37%;
+    float: left;
+    min-width: 60px;
+    margin-top: 2%;
+}
+
+/* label al lado del label con el usuario */
+.label-usuario-1{
+    padding: 4%;
+    min-width: 100px;
+    float: left;
+}
+
+#btn-cerrarSesion{
+    float: right;
+}
+
+
+.tablaUsuario{
+    border-style: solid;
+    border-color: aliceblue;
+    padding: 1%;
+}
+
+#tablaTable{
+    border-style: groove;
+    border-color: lightgoldenrodyellow;
+}
+
+/* css del modal saul */
+.cuerpoModal{
+    padding: 10px;
+    overflow: hidden;
+}
+
+#divBtnReservar{
+    padding: 0%;
+}
+
+#btnReservar{
+    float: right;
+}
+
+
 .cabecera{
     height: 150px;
     background-color: black;
@@ -64,27 +115,3 @@
 .espacio{
     height:160px;
 }
-/*Login Cabezera y Pie*/
-.label-usuario{
-    width: 37%;
-    float: left;
-    min-width: 60px;
-    margin-top: 2%;
-}
-
-
-/* label al lado del label con el usuario */
-.label-usuario-1{
-    padding: 4%;
-    min-width: 100px;
-    float: left;
-}
-
-#btn-cerrarSesion{
-    float: right;
-}
-
-.tablaUsuario{
-    background-color: aquamarine;
-}
-
