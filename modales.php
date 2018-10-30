@@ -37,7 +37,8 @@
                     ?>
                 </select>  
             </div>
-            <div class="col-xs-12 bloqueDescRecurso">
+            <div class="col-xs-12 ">
+                <div class="bloqueDescRecursoInm"></div>
                 <p class="infoRecursoInm"></p>
             </div>
             <div>
@@ -89,7 +90,8 @@
                     ?>
                 </select>   
             </div>
-            <div class="col-xs-12 bloqueDescRecurso">
+            <div class="col-xs-12">
+                <div class="bloqueDescRecursoElec"></div>
                 <p class="infoRecursoElec"></p>
             </div>
             <div>
@@ -141,8 +143,13 @@
     function getInfoRecurso(id_recurso){
         console.log(id_recurso.value);
         if((id_recurso.value)!= 0){
-            if((id_recurso.value) >= 7 ){var pDestino = '.infoRecursoInm';}
-            else { pDestino = '.infoRecursoElec';}
+            if((id_recurso.value) >= 7 ){
+                var pDestino = '.infoRecursoInm'; 
+                var imgRecurso = ".bloqueDescRecursoInm";
+            }else { 
+                pDestino = '.infoRecursoElec';
+                var imgRecurso = ".bloqueDescRecursoElec";
+            }
            //alert(recurso.value);
           var recurso = id_recurso.value;
           //alert(recurso);
@@ -156,11 +163,14 @@
                 },
                 success: function (response){
                     console.log(response);
+                    var arrayRespuesta = response.split('@');
                     // meter la descripcion en el bloque
-                    $(pDestino).html(response);
+                    $(pDestino).html(arrayRespuesta[0]);
+                    $(imgRecurso).html("<img src='./Imagenes/"+arrayRespuesta[1]+".jpg'>");
                 }
             });   
         }else{
+             $('.bloqueDescRecurso').html('');
             $('.infoRecursoInm').html('');
             $('.infoRecursoElec').html('');
         }

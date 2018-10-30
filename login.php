@@ -24,11 +24,11 @@
                         <form name="formulario1" action="centroRecursosController.php" method="POST" onsubmit="return validar()" class="clase1" >
                             <div class="input-group margin-bottom-sm">
                                 <span class="input-group-addon"><i class="fa fa-user-circle fa-fw"></i></span>
-                                <input class="form-control" name="usuario" type="text" placeholder="Usuario">
+                                <input class="form-control" id="user" name="usuario" type="text" placeholder="Usuario">
                             </div>
                             <div class="input-group" style="padding-top: 1%; padding-bottom: 2%;">
                                 <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
-                                <input class="form-control" name="password" type="password" placeholder="Password">
+                                <input class="form-control" id="passwd" name="password" type="password" placeholder="Password">
                             </div>
                             <button class="btn btn-success" type="" name="enviar">Enviar</button>
                         </form>
