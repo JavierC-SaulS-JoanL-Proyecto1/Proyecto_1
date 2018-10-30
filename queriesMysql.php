@@ -153,4 +153,13 @@ class queriesMysql{
         $finalizarReserva = mysqli_query($link, $queryFinalizarReserva);
         if($finalizarReserva) return true;
     }
+    
+    //Query para sacar la info de los recursos para el modal
+    public function getInfoRecurso(&$link, int $id_recurso){
+        $queryGetInfoRecurso="
+            SELECT descripcion FROM recursos WHERE id_recurso = $id_recurso";
+        $QueryInfoRecurso = mysqli_query($link, $queryGetInfoRecurso);
+        $infoRecurso = mysqli_fetch_array($QueryInfoRecurso);
+        return $infoRecurso[0];
+    }
 }

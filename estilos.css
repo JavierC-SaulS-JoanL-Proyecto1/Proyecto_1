@@ -78,9 +78,10 @@
     border-color: lightgoldenrodyellow;
 }
 
+/* css del modal saul */
 .cuerpoModal{
     padding: 10px;
-    height: 55px;
+    overflow: hidden;
 }
 
 #divBtnReservar{
