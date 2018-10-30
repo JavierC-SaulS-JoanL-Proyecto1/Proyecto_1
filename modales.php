@@ -166,11 +166,13 @@
                     var arrayRespuesta = response.split('@');
                     // meter la descripcion en el bloque
                     $(pDestino).html(arrayRespuesta[0]);
-                    $(imgRecurso).html("<img src='./Imagenes/"+arrayRespuesta[1]+".jpg' class='resol_imagenes'>");
+                    $(imgRecurso).html("<img src='./Imagenes/"+arrayRespuesta[1]+".jpg' class='resol_imagen'>");
                 }
             });   
-        }else{
-             $('.bloqueDescRecurso').html('');
+        }else if((id_recurso.value) == 0){
+        console.log('entra en el else');
+            $('.resol_imagen').remove();
+            //$('.resol_imagen').css('display','none');
             $('.infoRecursoInm').html('');
             $('.infoRecursoElec').html('');
         }
