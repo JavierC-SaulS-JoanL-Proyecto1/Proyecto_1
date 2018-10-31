@@ -5,12 +5,24 @@
     box-shadow: 2px 3px 20px 2px;
     border-radius: 5px;
     margin-top: 10%;
-    background-image: url(img/fondo-central.jpg);
+    background-image: url(imagenes/fondo-central.jpg);
     background-attachment: fixed;
 }
 
+.containerv2{
+    height: 100%;
+    width: 80%;
+    background-color: white;
+    box-shadow: 2px 3px 20px 2px;
+    border-radius: 5px;
+    margin-top: 10%;
+    background-image: url(imagenes/fondo-central.jpg);
+    background-attachment: fixed;
+    margin: 0 auto;
+}
+
 .color_fondo{
-	background-image: url(img/difu-blanco.png);
+    background-image: url(imagenes/difu-blanco.png);
     background-attachment: fixed;
 }
 
@@ -18,7 +30,7 @@
 	color:red;
 }
 .login_centro{
-	padding-top: 30%; 
+	padding-top: 35%;
     padding-bottom: 5%; 
 }
 
@@ -31,7 +43,6 @@
 .titulo{
     margin-bottom: 5%;
     text-align: center;
-    margin-bottom: 10%;
 }
 
     
@@ -41,6 +52,7 @@
     margin-left: 25%;
     padding: 0% 5% 2% 5%;
     min-width: 400px;
+    margin-bottom: 5%;
 }
 
 .blq-cntr-titulo{
@@ -54,12 +66,21 @@
 .recursosElec{
     float: right;
 }
+
 /*Login Cabezera y Pie*/
+
 .cabecera{
     height: 150px;
     background-color: black;
     padding-left: 0px;
     color:white;
+}
+
+.label-usuario{
+    width: 37%;
+    float: left;
+    min-width: 60px;
+    margin-top: 2%;
 }
 
 .imagen{
@@ -71,6 +92,7 @@
 .pie{
     text-align: center;
     width: 100%;
+    height: 2%;
 }
 
 .espacio{
@@ -89,14 +111,10 @@
     font-family: 'ABeeZee';
 }
 
-/*Login Cabezera y Pie*/
-.label-usuario{
-    width: 37%;
+.texto_footer{
     float: left;
-    min-width: 60px;
-    margin-top: 2%;
+    margin-left: 5px;
 }
-
 
 /* label al lado del label con el usuario */
 .label-usuario-1{
@@ -105,17 +123,96 @@
     float: left;
 }
 
+.form-control-pers{
+    position: relative;
+    z-index: 2;
+    border-radius: 5px 5px 5px 5px;
+    width: 80%;
+    height: 30px;
+    margin-bottom: 0;
+    color: black;
+}
+
+.input-group-addon-pers{
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
 #btn-cerrarSesion{
     float: right;
 }
 
+
 .tablaUsuario{
-    background-color: aquamarine;
+    border-style: solid;
+    border-color: aliceblue;
+    padding: 1%;
+}
+
+#tablaTable{
+    border-style: groove;
+    border-color: lightgoldenrodyellow;
+}
+
+
+.cuerpoModal{
+    padding: 10px;
+    overflow: hidden;
+}
+
+#divBtnReservar{
+    padding: 0%;
+}
+
+#btnReservar{
+    float: right;
+}
+
+.tabla_reservas{
+    background-color: antiquewhite;
+    width: 50%;
+    margin-left: 25%;
+    padding: 0% 5% 2% 5%;
+    min-width: 400px;
+    margin-bottom: 5%;
 }
 
 /*multimedia*/
 
-img{
+.resol_imagenes{
+    height: 200px;
+    width: 250px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.img_left_login{
     height: 80%;
     width: 80%;
+}
+
+.img_left_centro_recursos{
+    height: 20%;
+    width: 20%;
+    float: left;
+}
+
+.img_redes_sociales{
+    height: 8%;
+    width: 8%;
+    float: right;
+    margin: 5px;
+}
+
+.img_redes_socialesv2{
+    height: 4%;
+    width: 4%;
+    float: right;
+    margin: 5px;
 }

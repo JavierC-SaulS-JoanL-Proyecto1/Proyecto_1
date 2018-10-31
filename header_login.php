@@ -1,8 +1,6 @@
 <div class="cabec">
 		<div style="float: left; ">
-			<img src="img/logo.png">
+			<img class="img_left_login" src="imagenes/logo.png">
 		</div>
-		<div style="float: right;">
-			
-		</div>
+		
 </div>

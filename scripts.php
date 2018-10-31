@@ -11,7 +11,7 @@
 <!-- CSS PERSONAL -->
 <link href="estilos.css" rel="stylesheet" type="text/css">
 <link href="miestilo.css" rel="stylesheet" type="text/css">
-<!--Validacion.js -->
-<script  src="validacion.js"></script>
 <!--GOOGLE FONTS -->
 <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+<!--JavaScript login -->
+<script type="text/javascript" src="validacion.js"></script>
