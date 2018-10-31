@@ -113,5 +113,65 @@
 }
 
 .espacio{
-    height:160px;
+    height:100px;
 }
+
+.resol_imagen{
+    height: 200px;
+    width: 250px;
+    margin: 5%;
+}
+
+
+/* ESTILOS SAUL POR ABURRIMIENTO 
+.login_centro{
+    padding-top: 20%;
+    border-style: groove;
+    border-radius: 15px;
+    padding: 5%;
+    background-color: beige;
+}
+
+.fa-5x{
+    margin-left: 35%;
+}
+
+.headerLogin{
+    padding-top: 10%;
+}
+
+.formulario1{
+    padding: 5%;
+}
+
+.input-group{
+    padding: 5% 0 5% 0;
+}
+
+.btnEnviar{
+    margin-left: 25%;
+    width: 50%;
+}
+
+.color_fondo{
+    background-color: #110806;
+}
+
+.cabecera{
+    background-color: #110806;
+}
+
+.rota-horizontal{
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.resol_imagen{
+    height: 200px;
+    width: 300px;
+    margin: 5% 0 3% 15%;
+}
+*/

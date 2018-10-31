@@ -65,7 +65,17 @@ class queriesMysql{
     // Query que recibe el usuario y devuelve todas sus reservas
     public function getInfoReservas(&$link, string $usuario ){
         $reserva = [];
-        $queryGetInfoReserva="
+        if($usuario === 'toniAdmin'){
+            $queryGetInfoReserva="
+            SELECT
+                reserva.usuario_fk, reserva.id_recurso_fk, recursos.recurso, recursos.tipo, 
+                reserva.fecha_entrega, reserva.fecha_devolucion, reserva.id_reserva, recursos.disponible
+            FROM
+                reserva INNER JOIN recursos ON reserva.id_recurso_fk = recursos.id_recurso
+            ORDER BY
+                fecha_devolucion ASC";
+        }else{
+            $queryGetInfoReserva="
             SELECT
                 reserva.usuario_fk, reserva.id_recurso_fk, recursos.recurso, recursos.tipo, 
                 reserva.fecha_entrega, reserva.fecha_devolucion, reserva.id_reserva
@@ -75,6 +85,7 @@ class queriesMysql{
                 usuario_fk = '$usuario'
             ORDER BY
                 fecha_devolucion ASC";
+        }
         $getReserva = mysqli_query($link,$queryGetInfoReserva);
         if($getReserva){
             while ($row = mysqli_fetch_array($getReserva)){
@@ -112,10 +123,19 @@ class queriesMysql{
             SET disponible = 1 WHERE recurso = '$recurso'";
        $devolverRecurso = mysqli_query($link, $queryDevolverRecurso);
        if($devolverRecurso){
-           return "Pasa la query";
+           return "Recurso habilitado";
        }else{
            return "no pasa la query";
        }
+    }
+    
+    // Query para deshabilitar el recurso y poner la disponiblidad a false
+    public function deshabilitarRecurso(&$link, int $recurso){
+        $querydeshabilitarRecurso="
+            UPDATE recursos
+            SET disponible = 0 WHERE id_recurso = '$recurso'";
+       $deshabilitarRecurso = mysqli_query($link, $querydeshabilitarRecurso);
+       return "Recurso deshabilitado";
     }
    /* 
     // Query que borra el registro al devolver un recurso

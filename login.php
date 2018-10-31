@@ -9,7 +9,7 @@
         <?php require('header_login.php'); ?>
         <div class="container">
             <div class="col-xs-12">	
-                <div class="col-xs-4 col-xs-offset-4">
+                <div class="col-xs-4 col-xs-offset-4 headerLogin">
                     <div class="login_centro">
                         <?php 
                             if(isset($_REQUEST['error'])){
@@ -26,11 +26,11 @@
                                 <span class="input-group-addon"><i class="fa fa-user-circle fa-fw"></i></span>
                                 <input class="form-control" id="user" name="usuario" type="text" placeholder="Usuario">
                             </div>
-                            <div class="input-group" style="padding-top: 1%; padding-bottom: 2%;">
+                            <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
                                 <input class="form-control" id="passwd" name="password" type="password" placeholder="Password">
                             </div>
-                            <button class="btn btn-success" type="" name="enviar">Enviar</button>
+                            <button class="btn btn-success btnEnviar" type="" name="enviar">Enviar</button>
                         </form>
                     </div>
                 </div>

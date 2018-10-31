@@ -143,7 +143,7 @@
     function getInfoRecurso(id_recurso){
         console.log(id_recurso.value);
         if((id_recurso.value)!= 0){
-            if((id_recurso.value) >= 7 ){
+            if((id_recurso.value) > 7 ){
                 var pDestino = '.infoRecursoInm'; 
                 var imgRecurso = ".bloqueDescRecursoInm";
             }else { 
@@ -166,11 +166,13 @@
                     var arrayRespuesta = response.split('@');
                     // meter la descripcion en el bloque
                     $(pDestino).html(arrayRespuesta[0]);
-                    $(imgRecurso).html("<img src='./Imagenes/"+arrayRespuesta[1]+".jpg'>");
+                    $(imgRecurso).html("<img src='./Imagenes/"+arrayRespuesta[1]+".jpg' class='resol_imagen'>");
                 }
             });   
-        }else{
-             $('.bloqueDescRecurso').html('');
+        }else if((id_recurso.value) == 0){
+        console.log('entra en el else');
+            $('.resol_imagen').remove();
+            //$('.resol_imagen').css('display','none');
             $('.infoRecursoInm').html('');
             $('.infoRecursoElec').html('');
         }

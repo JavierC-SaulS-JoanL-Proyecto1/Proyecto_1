@@ -31,7 +31,7 @@
             <?php include('tablaRecursos.php')?>
         </div>
     </div>
-     <?php //echo $usuario.$password." <br>".$usuarioBD.$passwordBD; ?>
+     <?php include('footer_login.php') ?>
 </body>
 </html>
    

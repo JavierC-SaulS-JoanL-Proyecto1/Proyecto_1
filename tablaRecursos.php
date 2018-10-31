@@ -46,6 +46,20 @@
                                 . ' title="Click para devolver este Recurso"'
                                 . ' value="'.$reservas[$cont]['id_reserva'].'">X</button></td>';
                                 echo '</tr>';
+                            }elseif($usuario === 'toniAdmin'){
+                                if($reservas[$cont]['disponible'] === '1'){
+                                    echo '<td><button class="btn btn-danger deshabilitarRecursos" '
+                                    . ' title="Deshabilitar este recurso"'
+                                    . ' value="'.$reservas[$cont]['id_reserva'].'">Deshabilitar</button></td>';
+                                }elseif($reservas[$cont]['disponible'] === '0' 
+                                        && $reservas[$cont]['fecha_devolucion'] != '0000-00-00 00:00:00')
+                                {
+                                    echo '<td><button class="btn btn-success habilitarRecursos" '
+                                    . ' title="Habilitar este recurso"'
+                                    . ' value="'.$reservas[$cont]['id_reserva'].'">Habilitar</button></td>';
+                                }
+                                
+                                echo '</tr>';
                             }else{ 
                                 echo '<td></td>';
                             }
@@ -85,10 +99,43 @@ $(document).ready(function(){
             success: function (response){
                 console.log(response);
                 location.reload();
-                //$("#tituloPrueba").html('Recurso reservado');
             }
         });
       //console.log(recurso);
+    });
+    
+    $('.deshabilitarRecursos').click(function(){
+        var recurso = $(this).closest("tr").find('.recurso').text();
+        console.log(recurso);
+        $.ajax({
+            data: {recurso},
+            url: 'deshabilitarRecursosControllerAJAX.php',
+            type: 'POST',
+            beforeSend: function(){
+                console.log(recurso);
+            },
+            success: function (response){
+                console.log(response);
+                location.reload();
+            }
+        });
+    });
+    
+    $('.habilitarRecursos').click(function(){
+        var recurso = $(this).closest("tr").find('.recurso').text();
+        console.log(recurso);
+        $.ajax({
+            data: {recurso},
+            url: 'habilitarRecursosControllerAJAX.php',
+            type: 'POST',
+            beforeSend: function(){
+                console.log(recurso);
+            },
+            success: function (response){
+                console.log(response);
+                location.reload();
+            }
+        });
     });
 });
 </script>
