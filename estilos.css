@@ -1,0 +1,254 @@
+
+.color_fondo{
+    background-color: white;
+}
+
+.clase1{
+	color:red;
+}
+.login_centro{
+	padding-top: 60%; 
+}
+
+.cuadro_central{
+	height: 500px;
+	width: 100%;
+	background-color: black;
+}
+
+.titulo{
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+    
+.blq-cntr{
+    background-color: antiquewhite;
+    width: 50%;
+    margin-left: 25%;
+    padding: 0% 5% 2% 5%;
+    min-width: 400px;
+    margin-bottom: 5%;
+    border-radius: 12px;
+}
+
+.blq-cntr-titulo{
+    width: 100%;
+    height: 70px;
+    font-size: 18px;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.recursosElec{
+    float: right;
+}
+
+.cabecera{
+    height: 110px;
+    background-color: blueviolet;
+}
+
+.label-usuario{
+    width: 37%;
+    float: left;
+    min-width: 60px;
+    margin-top: 2%;
+}
+
+/* label al lado del label con el usuario */
+.label-usuario-1{
+    padding: 4%;
+    min-width: 100px;
+    float: left;
+}
+
+#btn-cerrarSesion{
+    float: right;
+}
+
+
+.tablaUsuario{
+    border-style: solid;
+    border-color: aliceblue;
+    padding: 1%;
+}
+
+#tablaTable{
+    border-style: groove;
+    border-color: lightgoldenrodyellow;
+}
+
+/* css del modal saul */
+.cuerpoModal{
+    padding: 10px;
+    overflow: hidden;
+}
+
+#divBtnReservar{
+    padding: 0%;
+}
+
+#btnReservar{
+    float: right;
+}
+
+
+.cabecera{
+    height: 150px;
+    background-color: black;
+    padding-left: 0px;
+    color:white;
+}
+
+.imagen{
+    height: 150px;
+    padding-right: 70px;
+    padding-left: 0px;
+}
+
+.pie{
+    color:white;
+    text-align: center;
+    width: 100%;
+    height: 2%;
+}
+
+.espacio{
+    height:100px;
+}
+
+.resol_imagen{
+    height: 200px;
+    width: 250px;
+    margin: 5%;
+}
+
+.resol_imagen{
+    height: 200px;
+    width: 300px;
+    margin: 5% 0 3% 15%;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.newHeaderLogin{
+    background-color: black;
+    height: 125px;
+    background-image: url(imagenes/difu-blanco.png);
+}
+.newHeaderLogin img{
+    height: 100%;
+    width: 20%;
+}
+
+.login_centro{
+    padding-top: 20%;
+    border-style: groove;
+    border-radius: 15px;
+    padding: 5%;
+    background-color: beige;
+    background-image: url(imagenes/fondo-central.jpg);
+}
+.fa-5x{
+    margin-left: 35%;
+}
+
+.headerLogin{
+    padding: 5%;
+}
+
+.formulario1{
+    padding: 5%;
+}
+
+.input-group{
+    padding: 5% 0 5% 0;
+}
+
+.btnEnviar{
+    margin-left: 25%;
+    width: 50%;
+}
+
+.footer{
+    height: 80px;
+   /* background-color: black;*/
+   background-image: url(imagenes/fondo-central.jpg);
+   
+}
+.footer h3{
+    float: left;
+}
+.imagenesFooter img{
+    height: 35px;
+    width: 35px;
+    float: right;
+    margin: 3% 1% 2% 1%;
+}
+
+.bloqueUsers{
+    margin: 3% 5% 0 40%;
+}
+table tbody tr{
+    background-color: gainsboro;
+}
+
+table thead tr{
+    background-color: darkgrey;
+}
+
+.blq-cntr{
+    background-image: url(imagenes/fondo-central.jpg);
+}
+/* ESTILOS SAUL POR ABURRIMIENTO 
+.login_centro{
+    padding-top: 20%;
+    border-style: groove;
+    border-radius: 15px;
+    padding: 5%;
+    background-color: beige;
+}
+
+.fa-5x{
+    margin-left: 35%;
+}
+
+.headerLogin{
+    padding-top: 10%;
+}
+
+.formulario1{
+    padding: 5%;
+}
+
+.input-group{
+    padding: 5% 0 5% 0;
+}
+
+.btnEnviar{
+    margin-left: 25%;
+    width: 50%;
+}
+
+.color_fondo{
+    background-color: #110806;
+}
+
+.cabecera{
+    background-color: #110806;
+}
+
+.rota-horizontal{
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.resol_imagen{
+    height: 200px;
+    width: 300px;
+    margin: 5% 0 3% 15%;
+}
+
+*/
